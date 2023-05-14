@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { PageHOC, CustomInput, CustomButton } from "../components";
+
+import { CustomButton, CustomInput, PageHOC } from "../components";
 import { useGlobalContext } from "../context";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
       setShowAlert({
         status: true,
         type: "failure",
-        message: "something went wrong!"
+        message: "something went wrong!",
       });
     }
   };
